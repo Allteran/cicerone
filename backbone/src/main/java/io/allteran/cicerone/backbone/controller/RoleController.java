@@ -27,6 +27,12 @@ public class RoleController {
         return roleService.findById(id).map(EntityConverter::convertToDTO);
     }
 
+    @GetMapping("/search/name/{name}")
+    public Mono<RoleDTO> searchByName(@PathVariable("name") String name) {
+        return roleService.findByName(name)
+                .map(EntityConverter::convertToDTO);
+    }
+
     @PostMapping("/new")
     public Mono<RoleDTO> create(@RequestBody RoleDTO body) {
         return roleService.create(Mono.just(EntityConverter.convertToEntity(body)))
@@ -40,6 +46,11 @@ public class RoleController {
                         idFromDb,
                         Mono.just(EntityConverter.convertToEntity(body)))
                 .map(EntityConverter::convertToDTO);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public Mono<Void> delete(@PathVariable("id") String id) {
+        return roleService.delete(id);
     }
 
 }

@@ -4,12 +4,14 @@ import io.allteran.cicerone.backbone.domain.Role;
 import io.allteran.cicerone.backbone.exception.DuplicateException;
 import io.allteran.cicerone.backbone.exception.NotFoundException;
 import io.allteran.cicerone.backbone.repo.RoleRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
+@Slf4j
 public class RoleService {
     private final RoleRepository repository;
 
@@ -31,27 +33,33 @@ public class RoleService {
 
     @Transactional
     public Mono<Role> create(Mono<Role> roleMono) {
-        return roleMono.flatMap(repository::save);
+        return roleMono.flatMap(role ->
+                repository.findByName(role.getName().toLowerCase())
+                        .singleOptional()
+                        .flatMap(existedRole -> (existedRole.isEmpty())
+                                ? repository.save(role)
+                                : Mono.error(new DuplicateException("Role name should be unique"))
+                        )
+
+        );
 
     }
 
     @Transactional
     public Mono<Role> update(String idFromDb, Mono<Role> roleMono) {
-        return roleMono.flatMap(role -> repository.findById(idFromDb)
-                .flatMap(roleFromDb ->{
-                    if(roleFromDb == null) {
-                        return Mono.error(new NotFoundException("Role update error: can't find roleMono with given ID [" + idFromDb + "]"));
-                    }
-                    roleFromDb.setName(role.getName());
-                    return repository.save(role);
-                }));
+        return roleMono.flatMap(role ->
+                repository.findById(idFromDb)
+                        .switchIfEmpty(Mono.error(new NotFoundException("Role update error: can't find roleMono with given ID [" + idFromDb + "]")))
+                        .flatMap(roleFromDb ->{
+                            roleFromDb.setName(role.getName());
+                            return repository.save(role);
+                        }));
     }
 
     @Transactional
     public Mono<Void> delete(String id) {
         return repository.findById(id)
-                .flatMap(roleFromDb -> (roleFromDb == null)
-                        ? Mono.error(new NotFoundException("Role delete error: can't find role with given ID [" + id + "]"))
-                        : repository.deleteById(id));
+                .switchIfEmpty(Mono.error(new NotFoundException("Role update error: can't find roleMono with given ID [" + id + "]")))
+                .flatMap(roleFromDb -> repository.deleteById(id));
     }
 }

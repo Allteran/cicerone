@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a22a465-496d-4a56-9041-92d0a9e2c120" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/dto/RoleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/util/EntityConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/domain/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/exception/DuplicateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/exception/DuplicateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/repo/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/repo/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/repo/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/controller/RoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backbone/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -48,34 +37,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/allteran/IdeaProjects/cicerone",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "/home/allteran/IdeaProjects/cicerone/src/main/java/io/allteran/Main.java",
-    "settings.editor.selected.configurable": "reactor",
-    "spring.configuration.checksum": "d70ae7b16a386a69116b097e282af76b",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/allteran/IdeaProjects/cicerone&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/allteran/IdeaProjects/cicerone/src/main/java/io/allteran/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d70ae7b16a386a69116b097e282af76b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="io.allteran.cicerone.backbone.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BackboneApplication">
+    <configuration name="RoleServiceTest.createAndReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backbone" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.allteran.cicerone.backbone.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.allteran.cicerone.backbone.service" />
+      <option name="MAIN_CLASS_NAME" value="io.allteran.cicerone.backbone.service.RoleServiceTest" />
+      <option name="METHOD_NAME" value="createAndReturn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackboneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="backbone" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.allteran.cicerone.backbone.BackboneApplication" />
@@ -83,6 +98,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RoleServiceTest.createAndReturn" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +114,9 @@
       <updated>1684402816229</updated>
       <workItem from="1684402817253" duration="363000" />
       <workItem from="1684403917379" duration="923000" />
-      <workItem from="1684526391173" duration="3456000" />
+      <workItem from="1684526391173" duration="3778000" />
+      <workItem from="1684665776232" duration="771000" />
+      <workItem from="1684852557576" duration="7078000" />
     </task>
     <servers />
   </component>
@@ -116,9 +138,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/RoleService.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/backbone/src/test/java/io/allteran/cicerone/backbone/service/RoleServiceTest.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
