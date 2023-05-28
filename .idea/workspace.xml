@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a22a465-496d-4a56-9041-92d0a9e2c120" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backbone/src/test/java/io/allteran/cicerone/backbone/service/RoleServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backbone/src/test/java/io/allteran/cicerone/backbone/service/RoleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/test/java/io/allteran/cicerone/backbone/service/RoleServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +72,8 @@
       <recent name="io.allteran.cicerone.backbone.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RoleServiceTest.findById_shouldReturnEmptyMono">
-    <configuration name="RoleServiceTest.createAndReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RoleServiceTest">
+    <configuration name="RoleServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backbone" />
       <extension name="coverage">
         <pattern>
@@ -83,13 +83,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.allteran.cicerone.backbone.service" />
       <option name="MAIN_CLASS_NAME" value="io.allteran.cicerone.backbone.service.RoleServiceTest" />
-      <option name="METHOD_NAME" value="createAndReturn" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleServiceTest.delete_shouldDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backbone" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.allteran.cicerone.backbone.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.allteran.cicerone.backbone.service" />
+      <option name="MAIN_CLASS_NAME" value="io.allteran.cicerone.backbone.service.RoleServiceTest" />
+      <option name="METHOD_NAME" value="delete_shouldDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleServiceTest.findAll_shouldFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoleServiceTest.delete_shouldThrowExceptionAndNotDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backbone" />
       <extension name="coverage">
         <pattern>
@@ -99,13 +114,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.allteran.cicerone.backbone.service" />
       <option name="MAIN_CLASS_NAME" value="io.allteran.cicerone.backbone.service.RoleServiceTest" />
-      <option name="METHOD_NAME" value="findAll_shouldFindAll" />
+      <option name="METHOD_NAME" value="delete_shouldThrowExceptionAndNotDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleServiceTest.findById_shouldFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoleServiceTest.update_shouldReturnUpdated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backbone" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +130,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.allteran.cicerone.backbone.service" />
       <option name="MAIN_CLASS_NAME" value="io.allteran.cicerone.backbone.service.RoleServiceTest" />
-      <option name="METHOD_NAME" value="findById_shouldFindById" />
+      <option name="METHOD_NAME" value="update_shouldReturnUpdated" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleServiceTest.findById_shouldReturnEmptyMono" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoleServiceTest.update_shouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backbone" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +146,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.allteran.cicerone.backbone.service" />
       <option name="MAIN_CLASS_NAME" value="io.allteran.cicerone.backbone.service.RoleServiceTest" />
-      <option name="METHOD_NAME" value="findById_shouldReturnEmptyMono" />
+      <option name="METHOD_NAME" value="update_shouldThrowException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,10 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RoleServiceTest.findById_shouldReturnEmptyMono" />
-        <item itemvalue="JUnit.RoleServiceTest.findById_shouldFindById" />
-        <item itemvalue="JUnit.RoleServiceTest.findAll_shouldFindAll" />
-        <item itemvalue="JUnit.RoleServiceTest.createAndReturn" />
+        <item itemvalue="JUnit.RoleServiceTest" />
+        <item itemvalue="JUnit.RoleServiceTest.delete_shouldThrowExceptionAndNotDelete" />
+        <item itemvalue="JUnit.RoleServiceTest.delete_shouldDelete" />
+        <item itemvalue="JUnit.RoleServiceTest.update_shouldThrowException" />
+        <item itemvalue="JUnit.RoleServiceTest.update_shouldReturnUpdated" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +182,8 @@
       <workItem from="1684526391173" duration="3778000" />
       <workItem from="1684665776232" duration="771000" />
       <workItem from="1684852557576" duration="7422000" />
-      <workItem from="1685185047633" duration="7891000" />
+      <workItem from="1685185047633" duration="7932000" />
+      <workItem from="1685283983154" duration="8070000" />
     </task>
     <servers />
   </component>
@@ -193,5 +210,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cicerone$RoleServiceTest.ic" NAME="RoleServiceTest Coverage Results" MODIFIED="1685292001097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.allteran.cicerone.backbone.service.*</FILTER>
+    </SUITE>
   </component>
 </project>
