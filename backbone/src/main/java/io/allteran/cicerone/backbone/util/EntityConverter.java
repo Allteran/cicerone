@@ -23,20 +23,15 @@ public class EntityConverter {
     }
 
     //WARNING: using raw this method can call NPE, because we don't set roles as well from Set of Role.id
-    public static User convertToEntity(UserDTO dto) {
+    public static User convertToEntity (UserDTO dto) {
         User entity = new User();
-        BeanUtils.copyProperties(dto, entity, "roles");
+        BeanUtils.copyProperties(dto, entity);
         return entity;
     }
 
     public static UserDTO convertToDTO(User entity) {
         UserDTO dto = new UserDTO();
-        BeanUtils.copyProperties(entity, dto, "roles");
-        Set<String> roleId = new HashSet<>();
-        for (Role r : entity.getRoles()) {
-            roleId.add(r.getId());
-        }
-        dto.setRoles(roleId);
+        BeanUtils.copyProperties(entity, dto);
         return dto;
     }
 }

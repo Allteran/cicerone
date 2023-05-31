@@ -34,14 +34,18 @@ public class RoleService {
     @Transactional
     public Mono<Role> create(Mono<Role> roleMono) {
         return roleMono.flatMap(role ->
-                repository.findByName(role.getName().toLowerCase())
-                        .singleOptional()
-                        .flatMap(existedRole -> (existedRole.isEmpty())
-                                ? repository.save(role)
-                                : Mono.error(new DuplicateException("Role name should be unique"))
-                        )
+                repository.existsByName(role.getName().toLowerCase())
+                        .flatMap(exists -> (exists)
+                                ? Mono.error(new DuplicateException("Role name should be unique"))
+                                : repository.save(role)
+//                repository.findByName(role.getName().toLowerCase())
+//                        .singleOptional()
+//                        .flatMap(existedRole -> (existedRole.isEmpty())
+//                                ? repository.save(role)
+//                                : Mono.error(new DuplicateException("Role name should be unique"))
+//                        )
 
-        );
+        ));
 
     }
 

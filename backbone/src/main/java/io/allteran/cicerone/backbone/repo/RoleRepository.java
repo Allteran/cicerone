@@ -10,4 +10,6 @@ import reactor.core.publisher.Mono;
 public interface RoleRepository extends ReactiveMongoRepository<Role, String> {
     @Query("{'name' :  ?0}")
     Mono<Role> findByName(String name);
+
+    Mono<Boolean> existsByName(String name);
 }

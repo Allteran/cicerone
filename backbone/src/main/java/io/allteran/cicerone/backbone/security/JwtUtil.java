@@ -45,10 +45,7 @@ public class JwtUtil {
     public String generateToken(User user) {
         Map<String, Object> claims = new HashMap<>();
         //here we put im claims list of Role.id
-        List<String> authorities = user.getRoles().stream()
-                .map(Role::getAuthority)
-                .toList();
-        claims.put("roles", authorities);
+        claims.put("roles", user.getRoles());
 
         long expirationSeconds = Long.parseLong(EXPIRATION_TIME);
         Date creationDate = new Date(System.currentTimeMillis());

@@ -7,11 +7,13 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Document(collection = "usr")
 @Data
@@ -23,18 +25,18 @@ public class User implements UserDetails {
     private String email;
     private String firstName;
     private String lastName;
-    private char[] password;
+    private String password;
     @Transient
-    private char[] passwordConfirm;
+    private String passwordConfirm;
     @Transient
     private String newPassword;
-    private Set<Role> roles;
-    private boolean isActive;
+    private Set<String> roles;
+    private boolean active;
     private LocalDateTime creationDate;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return roles;
+        return roles.stream().map(SimpleGrantedAuthority::new).collect(Collectors.toSet());
     }
 
     @Override
@@ -44,21 +46,21 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return isActive;
+        return active;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return isActive;
+        return active;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return isActive;
+        return active;
     }
 
     @Override
     public boolean isEnabled() {
-        return isActive;
+        return active;
     }
 }

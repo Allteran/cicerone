@@ -11,13 +11,8 @@ import org.springframework.security.core.GrantedAuthority;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Role implements GrantedAuthority {
+public class Role {
     @Id
     private String id;
     private String name;
-
-    @Override
-    public String getAuthority() {
-        return id;
     }
-}

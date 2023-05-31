@@ -1,6 +1,5 @@
 package io.allteran.cicerone.backbone.dto;
 
-import io.allteran.cicerone.backbone.domain.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,10 +15,10 @@ public class UserDTO {
     private String email;
     private String firstName;
     private String lastName;
-    private char[] password;
-    private char[] passwordConfirm;
+    private String password;
+    private String passwordConfirm;
     private String newPassword;
     private Set<String> roles;
-    private boolean isActive;
+    private boolean active;
     private LocalDateTime creationDate;
 }
