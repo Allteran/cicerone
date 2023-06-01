@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a22a465-496d-4a56-9041-92d0a9e2c120" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/exception/EntityFieldException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/dto/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/dto/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/exception/TokenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/BackboneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/BackboneApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/domain/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/repo/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/repo/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/repo/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/security/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/util/EntityConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/util/EntityConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backbone/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +193,10 @@
       <workItem from="1685296183584" duration="277000" />
       <workItem from="1685352060279" duration="4877000" />
       <workItem from="1685370818054" duration="2366000" />
-      <workItem from="1685383143922" duration="12243000" />
+      <workItem from="1685383143922" duration="12935000" />
+      <workItem from="1685620028130" duration="1227000" />
+      <workItem from="1685628290424" duration="964000" />
+      <workItem from="1685636220807" duration="3648000" />
     </task>
     <servers />
   </component>

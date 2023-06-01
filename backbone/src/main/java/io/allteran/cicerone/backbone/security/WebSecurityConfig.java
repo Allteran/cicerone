@@ -55,7 +55,7 @@ public class WebSecurityConfig {
                 .authenticationManager(authenticationManager)
                 .securityContextRepository(securityContextRepository)
                 .authorizeExchange()
-                .pathMatchers("/auth/**", "/favicon.ico", "/api/**").permitAll()
+                .pathMatchers("/auth/**", "/favicon.ico").permitAll()
                 //implement next line in case when you want to use certain path only for certain role
                 //and don't forget that GrantedAuthority.getName == Role.getId
 //                .pathMatchers("/admin").hasRole(ROLE_ADMIN_ID)
