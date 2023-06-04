@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a22a465-496d-4a56-9041-92d0a9e2c120" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/dto/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/dto/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/exception/TokenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/.mvn/wrapper/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/main/docker/Dockerfile.jvm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/main/docker/Dockerfile.legacy-jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/main/docker/Dockerfile.native" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/main/docker/Dockerfile.native-micro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/main/java/io/allteran/cicerone/ExampleResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/main/resources/META-INF/resources/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/test/java/io/allteran/cicerone/ExampleResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quaestor/src/test/java/io/allteran/cicerone/ExampleResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/java/io/allteran/cicerone/backbone/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backbone/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backbone/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +46,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2Pxdl0pnuwHg60Oat4xojUBB6ij" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,6 +64,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ExpandQuarkusEnvironmentOptionsPanel&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -56,13 +77,17 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/allteran/IdeaProjects/cicerone&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/allteran/IdeaProjects/cicerone/quaestor&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/home/allteran/IdeaProjects/cicerone/src/main/java/io/allteran/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;d70ae7b16a386a69116b097e282af76b&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -165,6 +190,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.RoleServiceTest" />
+      <item itemvalue="JUnit.RoleServiceTest.delete_shouldDelete" />
+      <item itemvalue="JUnit.RoleServiceTest.delete_shouldThrowExceptionAndNotDelete" />
+      <item itemvalue="JUnit.RoleServiceTest.update_shouldReturnUpdated" />
+      <item itemvalue="JUnit.RoleServiceTest.update_shouldThrowException" />
+      <item itemvalue="Spring Boot.BackboneApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RoleServiceTest" />
@@ -196,7 +229,12 @@
       <workItem from="1685383143922" duration="12935000" />
       <workItem from="1685620028130" duration="1227000" />
       <workItem from="1685628290424" duration="964000" />
-      <workItem from="1685636220807" duration="3648000" />
+      <workItem from="1685636220807" duration="4452000" />
+      <workItem from="1685700166973" duration="970000" />
+      <workItem from="1685701261163" duration="1511000" />
+      <workItem from="1685711622938" duration="1845000" />
+      <workItem from="1685721525599" duration="2420000" />
+      <workItem from="1685727566836" duration="300000" />
     </task>
     <servers />
   </component>
@@ -207,6 +245,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/backbone" />
+      <path value="$PROJECT_DIR$/quaestor" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
