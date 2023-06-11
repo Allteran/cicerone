@@ -1,10 +1,9 @@
 package io.allteran.cicerone.repo;
 
-import io.allteran.cicerone.entity.BNCalcPeriod;
+import io.allteran.cicerone.entity.ContractType;
 import io.quarkus.hibernate.reactive.panache.PanacheRepository;
-import io.smallrye.mutiny.Uni;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-public class BNCalcPeriodRepo implements PanacheRepository<BNCalcPeriod> {
+public class ContractTypeRepo implements PanacheRepository<ContractType> {
 }

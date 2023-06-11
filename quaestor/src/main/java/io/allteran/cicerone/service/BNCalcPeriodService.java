@@ -29,7 +29,7 @@ public class BNCalcPeriodService {
                 .onItem().ifNull().failWith(() -> new NotFoundException("Can't find any record of CalcPeriod in database"));
     }
 
-    //WARNING: findById as findAll gives you FULL ACCESS directly to the object in database, so pay attention when you manipulate with those objects
+    //WARNING: repo.findById as repo.findAll gives you FULL ACCESS directly to the object in database, so pay attention when you manipulate with those objects
     public Uni<BNCalcPeriodDTO> findById(long id) {
         return repo.findById(id)
                 .onItem().ifNotNull().transform(EntityConverter::convertToDTO)

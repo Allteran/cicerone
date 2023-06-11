@@ -22,7 +22,11 @@ public class BNCalcPeriodResource {
     @WithSession
     public Uni<Response> findAll() {
         return periodService.findAll()
-                .map(data -> Response.ok(data).build());
+                .onItem().transform(data -> Response.ok(data).build())
+                .onFailure().recoverWithItem(throwable ->
+                        Response.status(Response.Status.NOT_FOUND)
+                                .type(MediaType.TEXT_PLAIN_TYPE)
+                                .entity(throwable.getMessage()).build());
     }
 
     @GET
