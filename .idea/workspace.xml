@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a22a465-496d-4a56-9041-92d0a9e2c120" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/quaestor/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/.mvn/wrapper/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/main/docker/Dockerfile.jvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/main/docker/Dockerfile.legacy-jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/main/docker/Dockerfile.native" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/main/docker/Dockerfile.native-micro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/main/java/io/allteran/cicerone/ExampleResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/main/resources/META-INF/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/test/java/io/allteran/cicerone/ExampleResourceIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quaestor/src/test/java/io/allteran/cicerone/ExampleResourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8a22a465-496d-4a56-9041-92d0a9e2c120" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -235,6 +213,7 @@
       <workItem from="1685711622938" duration="1845000" />
       <workItem from="1685721525599" duration="2420000" />
       <workItem from="1685727566836" duration="300000" />
+      <workItem from="1686952173497" duration="85000" />
     </task>
     <servers />
   </component>

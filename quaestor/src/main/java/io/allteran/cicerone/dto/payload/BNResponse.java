@@ -1,6 +1,6 @@
-package io.allteran.cicerone.dto;
+package io.allteran.cicerone.dto.payload;
 
-import io.allteran.cicerone.entity.calculations.TaxElement;
+import io.allteran.cicerone.dto.TaxElement;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

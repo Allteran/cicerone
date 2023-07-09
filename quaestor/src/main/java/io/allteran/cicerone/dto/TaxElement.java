@@ -1,4 +1,4 @@
-package io.allteran.cicerone.entity.calculations;
+package io.allteran.cicerone.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

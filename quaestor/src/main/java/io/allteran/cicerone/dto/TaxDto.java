@@ -1,6 +1,6 @@
-package io.allteran.cicerone.entity;
+package io.allteran.cicerone.dto;
 
-import jakarta.persistence.*;
+import io.allteran.cicerone.entity.TaxPayer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,13 +8,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "tax")
-public class Tax {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class TaxDto {
     private long id;
-    @Enumerated(EnumType.STRING)
     private TaxPayer payer;
     private float percentage;
     private String name;
